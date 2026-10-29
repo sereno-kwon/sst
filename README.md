@@ -1,4 +1,4 @@
-# Moulton SST Wide, Korean Edition
+# Moulton SST WIDE
 
 sst.rubiworkshop.com 모델 소개 원페이지. 폴스타 4 쿠페 페이지 구성을 참고하고, 서체 톤은 루비워크샵 메인 히어로 위젯(영문 Pretendard, 한글 에스코어 드림 4)을 따릅니다.
 
