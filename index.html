@@ -15,12 +15,12 @@
 <meta property="og:url" content="https://sst.rubiworkshop.com/">
 <meta property="og:title" content="몰튼 SST 와이드 | Moulton SST WIDE">
 <meta property="og:description" content="작은 바퀴, 넓은 타이어. 몰튼의 승차감을 더 먼 길까지. 루비워크샵 반포 몰튼 쇼룸에서 상담하실 수 있습니다.">
-<meta property="og:image" content="https://sst.rubiworkshop.com/images/hero.jpg">
+<meta property="og:image" content="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/55099274198ec.jpg">
 <meta property="og:image:alt" content="몰튼 SST 와이드">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="몰튼 SST 와이드 | Moulton SST WIDE">
 <meta name="twitter:description" content="작은 바퀴, 넓은 타이어. 몰튼의 승차감을 더 먼 길까지. 루비워크샵 반포 몰튼 쇼룸에서 상담하실 수 있습니다.">
-<meta name="twitter:image" content="https://sst.rubiworkshop.com/images/hero.jpg">
+<meta name="twitter:image" content="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/55099274198ec.jpg">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -45,7 +45,7 @@
    "name": "Moulton SST WIDE",
    "alternateName": "몰튼 SST 와이드",
    "description": "몰튼 SST 와이드(Moulton SST WIDE). 최대 50mm 타이어를 받아들이는 20인치 몰튼 SST 프레임. 리딩링크·모노스피어 서스펜션, 분리형 프레임, 루비워크샵 레퍼런스 빌드와 사양, 반포 몰튼 쇼룸 상담 안내.",
-   "image": "https://sst.rubiworkshop.com/images/hero.jpg",
+   "image": "https://cdn.imweb.me/upload/S20200311e09de2572a4ce/55099274198ec.jpg",
    "category": "자전거 프레임",
    "brand": {
     "@type": "Brand",
@@ -206,7 +206,7 @@ p{margin:0}
 .plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
 
 /* Hero */
-.hero .plate{aspect-ratio:16/7}
+.hero .plate{aspect-ratio:16/9;max-height:84vh;width:100%}
 @media (max-width:700px){.hero .plate{aspect-ratio:4/3}}
 .hero-body{display:grid;grid-template-columns:1fr;gap:28px;padding-block:32px 40px}
 @media (min-width:1000px){.hero-body{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:end;column-gap:56px;padding-block:44px 52px}}
@@ -234,12 +234,11 @@ section{scroll-margin-top:calc(var(--bar-h) + env(safe-area-inset-top,0px))}
 @media (min-width:900px){.sec{padding-block:112px}}
 .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .statement{display:grid;gap:40px}
-@media (min-width:900px){.statement{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:64px}}
-.statement .plate{aspect-ratio:4/3}
+@media (min-width:900px){.statement{grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:center;gap:64px}}
+.statement .plate{aspect-ratio:4/5}
 
 /* Features with hotspots */
-.feat .plate{aspect-ratio:16/9}
-@media (max-width:700px){.feat .plate{aspect-ratio:4/3}}
+.feat .plate{aspect-ratio:16/10}
 .hot{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;border:0;background:var(--bg);color:var(--ink);font:inherit;font-size:13px;cursor:pointer;display:grid;place-items:center;box-shadow:0 0 0 1px var(--line);transition:background .2s,color .2s}
 .hot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--accent);opacity:0;transition:opacity .2s}
 .hot.on{background:var(--accent);color:var(--bg);box-shadow:none}
@@ -260,8 +259,8 @@ section{scroll-margin-top:calc(var(--bar-h) + env(safe-area-inset-top,0px))}
 
 /* Frame story */
 .story{display:grid;gap:40px}
-@media (min-width:900px){.story{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:72px;align-items:center}}
-.story .plate{aspect-ratio:3/2}
+@media (min-width:900px){.story{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}}
+.story .plate{aspect-ratio:4/5}
 .story .hd{margin-bottom:20px}
 .story p.desc{color:var(--muted);max-width:56ch}
 
@@ -281,8 +280,9 @@ section{scroll-margin-top:calc(var(--bar-h) + env(safe-area-inset-top,0px))}
 .gnav button:hover{background:var(--ink);color:var(--bg)}
 .gnav svg{width:14px;height:14px}
 .gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
-.gallery .plate{flex:0 0 78%;aspect-ratio:4/3;scroll-snap-align:start}
-@media (min-width:900px){.gallery .plate{flex-basis:calc((100% - 32px)/2.4)}}
+.gallery .plate{flex:0 0 72%;aspect-ratio:3/4;scroll-snap-align:start}
+@media (min-width:900px){.gallery .plate{flex-basis:calc((100% - 48px)/3.6)}}
+#bplate img{object-position:50% 72%}
 .gcount{margin-top:14px;color:var(--muted);font-size:12px;letter-spacing:.08em;font-variant-numeric:tabular-nums}
 
 /* Configurator */
@@ -396,7 +396,7 @@ html{scroll-behavior:smooth}
   <section id="overview" class="hero">
     <figure class="plate">
       <svg class="bike"><use href="#bike"/></svg><span class="ph">images/hero.jpg</span>
-      <img src="images/hero.jpg" alt="몰튼 SST 와이드 (Moulton SST WIDE)" onerror="this.remove()">
+      <img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/55099274198ec.jpg" alt="몰튼 SST 와이드 실버그레이 업라이트 빌드 측면" style="object-position:50% 88%" fetchpriority="high" onerror="this.remove()">
     </figure>
     <div class="wrap hero-body">
       <div>
@@ -432,7 +432,7 @@ html{scroll-behavior:smooth}
       </div>
       <figure class="plate">
         <svg class="bike"><use href="#bike"/></svg><span class="ph">images/intro.jpg</span>
-        <img src="images/intro.jpg" alt="몰튼 SST 와이드, 20인치 휠과 50mm 와이드 타이어" onerror="this.remove()">
+        <img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/34434da640781.jpg" alt="슈발베 빌리 봉커 50mm 타이어를 끼운 몰튼 SST 와이드 뒷바퀴와 LTWOO A7 구동계" loading="lazy" decoding="async" onerror="this.remove()">
       </figure>
     </div>
   </div>
@@ -444,12 +444,12 @@ html{scroll-behavior:smooth}
     </div>
     <figure class="plate">
       <svg class="bike"><use href="#bike"/></svg><span class="ph">images/design.jpg</span>
-      <img src="images/design.jpg" alt="몰튼 SST 와이드 헤어핀 스페이스프레임과 리딩링크·모노스피어 서스펜션" onerror="this.remove()">
+      <img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/866dd8be3205c.jpg" alt="몰튼 SST 와이드 실버그레이 측면, 리딩링크와 모노스피어 서스펜션" style="object-position:50% 67%" loading="lazy" decoding="async" onerror="this.remove()">
       <!-- Hotspot positions are % of the image; adjust data-x / data-y to the real photo -->
-      <button class="hot on" data-f="0" data-x="74" data-y="64" aria-label="Leading Link">1</button>
-      <button class="hot" data-f="1" data-x="40" data-y="56" aria-label="Monosphere">2</button>
-      <button class="hot" data-f="2" data-x="22" data-y="74" aria-label="Stainless Dropout">3</button>
-      <button class="hot" data-f="3" data-x="56" data-y="40" aria-label="Separable">4</button>
+      <button class="hot on" data-f="0" data-x="68.4" data-y="66.8" aria-label="Leading Link">1</button>
+      <button class="hot" data-f="1" data-x="37.3" data-y="44.6" aria-label="Monosphere">2</button>
+      <button class="hot" data-f="2" data-x="23.6" data-y="66.8" aria-label="Stainless Dropout">3</button>
+      <button class="hot" data-f="3" data-x="40.7" data-y="51" aria-label="Separable">4</button>
     </figure>
     <ul class="flist">
       <li><button class="on" data-f="0"><span class="n">01</span><span class="t">Leading Link</span><span class="s" data-i="f1s">몰튼 리딩링크 프론트 서스펜션</span><span class="d" data-i="f1d">406 휠에 50mm 타이어까지. 와이드 프레임이 만드는 여유로 도시와 투어를 함께 달립니다.</span></button></li>
@@ -464,7 +464,7 @@ html{scroll-behavior:smooth}
       <div class="story">
         <figure class="plate">
           <svg class="bike"><use href="#bike"/></svg><span class="ph">images/frame.jpg</span>
-          <img src="images/frame.jpg" alt="몰튼 SST 와이드 프레임 디테일" onerror="this.remove()">
+          <img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/9c36b3e39626f.jpg" alt="뒤쪽 사선에서 본 몰튼 SST 와이드 헤어핀 스페이스프레임" loading="lazy" decoding="async" onerror="this.remove()">
         </figure>
         <div>
           <div class="hd">
@@ -498,12 +498,12 @@ html{scroll-behavior:smooth}
         </div>
       </div>
       <div class="gallery" id="gallery" tabindex="0">
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-1.jpg</span><img src="images/gallery-1.jpg" alt="몰튼 SST 와이드 사진 1" onerror="this.remove()"></figure>
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-2.jpg</span><img src="images/gallery-2.jpg" alt="몰튼 SST 와이드 사진 2" onerror="this.remove()"></figure>
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-3.jpg</span><img src="images/gallery-3.jpg" alt="몰튼 SST 와이드 사진 3" onerror="this.remove()"></figure>
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-4.jpg</span><img src="images/gallery-4.jpg" alt="몰튼 SST 와이드 사진 4" onerror="this.remove()"></figure>
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-5.jpg</span><img src="images/gallery-5.jpg" alt="몰튼 SST 와이드 사진 5" onerror="this.remove()"></figure>
-        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-6.jpg</span><img src="images/gallery-6.jpg" alt="몰튼 SST 와이드 사진 6" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-1.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/9fbd46b0f8175.jpg" alt="Velo Orange 그래놀라 바와 Paul Component 박스카 스템" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-2.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/6be2e6d8e6982.jpg" alt="Paul Component 칸티 레버와 Crane Bell E-Ne 벨" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-3.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/aad16988c1e72.jpg" alt="ADM 가죽 그립(버건디)과 LTWOO A7 시프터" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-4.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/b5f95843f0f84.jpg" alt="Berthoud Aspin 가죽 안장" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-5.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/a69c1691571d8.jpg" alt="MKS Lambda 페달" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <figure class="plate"><svg class="bike"><use href="#bike"/></svg><span class="ph">images/gallery-6.jpg</span><img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/d904c4ce7fc1d.jpg" alt="Velocity Cliffhanger 림과 슈발베 빌리 봉커 타이어" loading="lazy" decoding="async" onerror="this.remove()"></figure>
       </div>
       <div class="gcount" id="gcount">1 / 6</div>
     </div>
@@ -519,6 +519,7 @@ html{scroll-behavior:smooth}
       <div class="cfg-grid">
         <figure class="plate" id="bplate">
           <svg class="bike"><use href="#bike"/></svg><span class="ph" id="bph">images/build-sg-upright.jpg</span>
+          <img src="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/55099274198ec.jpg" alt="Moulton SST WIDE 실버그레이 업라이트" loading="lazy" decoding="async">
         </figure>
         <div>
           <div class="btabs" role="tablist" id="btabs"><button type="button" role="tab" aria-selected="true" data-b="0">실버그레이 업라이트</button><button type="button" role="tab" aria-selected="false" data-b="1">실버그레이 드롭</button><button type="button" role="tab" aria-selected="false" data-b="2">리비에라 블루 드롭</button></div>
@@ -708,8 +709,9 @@ ja:{
  sp:[["ホイール","20″ (406 mm)"],["フロントサスペンション","リーディングリンク（ユニクラウン）"],["リアサスペンション","モノスフィア"],["分割方式","センターボルト＋アルミロックナット"],["フレーム素材","コロンバス・スピリット、レイノルズ525クロモリ、ステンレスドロップアウト"],["製法","フィレットろう付け、ヘアピン構造、ソリッドジグザグ"],["リアOLD","135 mm QR"],["ブレーキ台座","前Vブレーキ、後IS・ポストマウントディスク（140、160 mm）"],["タイヤクリアランス","最大 50 mm¹"],["ステム規格","アヘッド"],["シートポスト","31.6 mm"],["BB規格","BSA"],["ボトル台座","2か所（シートチューブ、ロアレール）"],["仕上げ","パウダーコート"],["最大積載","120 kg"]]
 }};
 
+var IMG="https://cdn.imweb.me/upload/S20200311e09de2572a4ce/";
 var BUILDS=[
- {id:"sg-upright",color:"sg",name:{ko:"실버그레이 업라이트",en:"Silver Grey Upright",ja:"シルバーグレー アップライト"},
+ {id:"sg-upright",color:"sg",img:IMG+"55099274198ec.jpg",name:{ko:"실버그레이 업라이트",en:"Silver Grey Upright",ja:"シルバーグレー アップライト"},
   use:{ko:"시티 · 투어링",en:"City · Touring",ja:"シティ・ツーリング"},
   rows:[
    ["r_drive","LTWOO A7 1×10 · 50T / 11-40T"],
@@ -765,7 +767,7 @@ function renderBuild(){
   document.getElementById("brows").innerHTML=b.rows.map(function(r){
     return '<div><dt>'+esc(L[r[0]])+'</dt><dd>'+esc(tx(r[1]))+'</dd></div>';
   }).join("");
-  var src="images/build-"+b.id+".jpg";
+  var src=b.img||("images/build-"+b.id+".jpg");
   document.getElementById("bph").textContent=src;
   plateImg(document.getElementById("bplate"),src,"Moulton SST WIDE "+tx(b.name));
 }
